@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: burlywood;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    background-image:url(/abstract-brown-background_1100-123.jpg);
+    background-size:cover;
+    background-clip: text;
+    color: transparent;
+    font-family: cursive;
+    font-size: 2.6em;
+    backdrop-filter: blur(10px);
+    border:2px solid transparent;
+    border-radius: 30px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+header p {
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #666;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    border-radius: 60%;
+    border: 1px solid burlywood;
+    width: 160px;
+    height: 160px;
+    margin-right: 20px;
+    box-shadow:0px 8px 2px rgba(0,0,0,0.8);
+    animation: bounce 1s infinite;
+}
+
+.about {
+    flex: 1;
+}
+
+.about h2 {
+    margin-top: 0;
+    color: #666;
+    animation: fadeIn 8s ease-in-out;
+    
+}
+
+.about p{
+  border:2px solid transparent;
+  font-family: monospace;
+  font-size: 0.6rem;
+  border-width: 3px;
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.feeling, .contact {
+    margin-bottom: 20px;
+   
+    
+}
+
+.feeling h2, .contact h2 {
+    font-family: georgia;
+    border-bottom: 2px solid dimgray;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color:dimgray;
+}
+
+ul li {
+    background: dimgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    animation: fadeIn 8s ease-in-out;
+}
+
+.feeling ul li:hover{
+  transform: scale(0.8);
+}
+
+.contact{
+  border-bottom: 2px solid dimgray;
+padding-bottom: 5px;
+}
+
+.contact p a{
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.contact p{
+  font-family: cursive;
+  font-size: 1em;
+  color: #666 ;
+}
+
+.contact h2{
+  font-family: georgia;
+}
+
+.contact ul{
+  font-family: georgia;
+  font-size: 2.8rem;
+  text-align: center;
+  position: relative;
+  border: 2px solid blanchedalmond;
+  border-radius: 50px;
+  box-shadow:2px 4px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
